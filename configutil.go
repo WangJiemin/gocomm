@@ -34,7 +34,7 @@ func ReadConfig(filepath string) map[string]string {
 			}
 		}
 
-		if len(line) == 0 || line == "\r\n" {
+		if len(line) == 0 || line == "#" || line == "\r\n" {
 			//break
 			continue
 		}
